@@ -225,7 +225,10 @@ nav ul li a.active, nav ul li a:hover {
     display: flex;
     justify-content: space-between; /* 在主轴上均匀分配空白 */
     align-items: flex-start; /* 垂直对齐顶部 */
-    margin-bottom: 10px; /* 根据需要调整行距 */
+}
+
+.research-topic {
+    margin-bottom: 20px; /* 为研究项目添加行距 */
 }
 
 .research-info {
