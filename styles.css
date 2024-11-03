@@ -219,3 +219,32 @@ nav ul li a.active, nav ul li a:hover {
 .teaching-date {
     text-align: right; /* 右对齐 */
 }
+
+
+.research-item {
+    display: flex;
+    justify-content: space-between; /* 在主轴上均匀分配空白 */
+    align-items: flex-start; /* 垂直对齐顶部 */
+}
+
+.research-info {
+    text-align: left; /* 左对齐 */
+}
+
+.research-date {
+    text-align: right; /* 右对齐 */
+}
+
+.award-item {
+    display: flex;
+    justify-content: space-between; /* 在主轴上均匀分配空白 */
+    align-items: flex-start; /* 垂直对齐顶部 */
+}
+
+.award-info {
+    text-align: left; /* 左对齐 */
+}
+
+.award-date {
+    text-align: right; /* 右对齐 */
+}
