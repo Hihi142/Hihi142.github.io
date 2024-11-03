@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teaching - Xusheng Zhi</title>
+    <link rel="icon" type="image/png" href="https://github.com/hihi142/hihi142.github.io/raw/main/assets/icon.png">
+    <link rel="stylesheet" href="https://raw.githubusercontent.com/Hihi142/Hihi142.github.io/refs/heads/main/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Xusheng Zhi</div>
+        <nav>
+            <ul>
+                <li><a href="https://raw.githubusercontent.com/Hihi142/Hihi142.github.io/refs/heads/main/about.html" class="nav-link active">About</a></li>
+                <li><a href="https://raw.githubusercontent.com/Hihi142/Hihi142.github.io/refs/heads/main/pub.html" class="nav-link">Publications</a></li>
+                <li><a href="https://raw.githubusercontent.com/Hihi142/Hihi142.github.io/refs/heads/main/teaching.html" class="nav-link active">Teaching</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="content active section-content">
+        <div id="sidebar"></div>
+        <div class="right-column">
+            <h4>Teaching Experience</h4>
+
+            <div class="teaching-item">
+                <div class="teaching-info">
+                    <strong>Teaching Assistant</strong>, <em>Software Analysis</em>
+                </div>
+                <span class="teaching-date">
+                    Fall 2024, Peking University
+                </span>
+            </div>
+            <div>
+                Homepage: <a href="https://xiongyingfei.github.io/SA_new/2024/" target="_blank">https://xiongyingfei.github.io/SA_new/2024/</a><br>
+                An undergraduate course on static analysis and more recent advancements in programming languages, such as program synthesis, instructed by <a href="https://xiongyingfei.github.io/" target="_blank">Prof. Yingfei Xiong</a>.
+                
+            </div>
+
+        </div>
+    </div>
+    <script>
+        fetch('https://raw.githubusercontent.com/Hihi142/Hihi142.github.io/refs/heads/main/sidebar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('sidebar').innerHTML = data;
+            });
+    </script>
+</body>
+</html>

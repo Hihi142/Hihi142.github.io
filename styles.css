@@ -176,28 +176,46 @@ nav ul li a.active, nav ul li a:hover {
     margin-left: 10px; /* 为间距增加一些外边距 */
     margin-right: 20px; /* 在名称和时间之间提供一些空间 */
     flex-grow: 1;
-    text-align: right; /* 右对齐 */
 }
 
+
+
+
 .right-column ul {
-    padding-left: 0; /* 移除列表的默认填充 */
+    list-style-type: none; /* 去掉默认的列表样式 */
+    padding: 0; /* 去掉内边距 */
+    margin: 0; /* 去掉外边距 */
 }
 
 .right-column li {
     display: flex;
     justify-content: space-between; /* 使项目名称和描述在一行 */
     margin-bottom: 10px; /* 为列表项增加底部外边距 */
+    text-align: left;
 }
 
 .right-column li strong {
-    flex-grow: 1; /* 允许条目名称占据多余空间 */
     font-size: 16px;
     margin-right: 20px; /* 在名称和时间之间提供一些空间 */
 }
 
 .right-column li span {
     white-space: nowrap; /* 防止时间换行 */
-    text-align: right;
     font-size: 14px;
     color: #9a9a9a;
+}
+
+
+.teaching-item {
+    display: flex;
+    justify-content: space-between; /* 在主轴上均匀分配空白 */
+    align-items: flex-start; /* 垂直对齐顶部 */
+}
+
+.teaching-info {
+    text-align: left; /* 左对齐 */
+}
+
+.teaching-date {
+    text-align: right; /* 右对齐 */
 }

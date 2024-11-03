@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Xusheng Zhi</title>
+    <link rel="icon" type="image/png" href="https://github.com/hihi142/hihi142.github.io/raw/main/assets/icon.png">
+    <link rel="stylesheet" href="https://raw.githubusercontent.com/Hihi142/Hihi142.github.io/refs/heads/main/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Xusheng Zhi</div>
+        <nav>
+            <ul>
+                <li><a href="https://raw.githubusercontent.com/Hihi142/Hihi142.github.io/refs/heads/main/about.html" class="nav-link active">About</a></li>
+                <li><a href="https://raw.githubusercontent.com/Hihi142/Hihi142.github.io/refs/heads/main/pub.html" class="nav-link">Publications</a></li>
+                <li><a href="https://raw.githubusercontent.com/Hihi142/Hihi142.github.io/refs/heads/main/teaching.html" class="nav-link">Teaching</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="content active">
+        <!-- 左侧内容将通过 JavaScript 加载 -->
+        <div id="sidebar"></div>
+        <div class="right-column">
+            <h4>Welcome to My Home Page!</h4>
+            <p>I am Xusheng Zhi (<strong>旭生 智</strong>, pronunciation: <em>shoe-shung gee</em>), an undergraduate student at <a href="http://english.pku.edu.cn/" target="_blank">Peking University</a>. I have a broad interest in programming languages, especially formal verification...</p>
+            <div class="description">
+                <h4>Education</h4>
+                <ul>
+                    <li>
+                        <strong>BSc in Computer Science</strong>
+                        <span>Peking University, 2021 - 2025 (expected)</span>
+                    </li>
+                    <li>
+                        <strong>BSc in Computer Science</strong>
+                        <span>Peking University, 2021 - 2025 (expected)</span>
+                    </li>
+                </ul>
+                <h4>Experience</h4>
+                <ul>
+                    <li>
+                        <strong>BSc in Computer Science</strong>
+                        <span>Peking University, 2021 - 2025 (expected)</span>
+                    </li>
+                    <li>
+                        <strong>BSc in Computer Science</strong>
+                        <span>Peking University, 2021 - 2025 (expected)</span>
+                    </li>
+                </ul>
+                <h4>Selected Awards</h4>
+                <ul>
+                    <li>
+                        <strong>BSc in Computer Science</strong>
+                        <span>Peking University, 2021 - 2025 (expected)</span>
+                    </li>
+                    <li>
+                        <strong>BSc in Computer Science</strong>
+                        <span>Peking University, 2021 - 2025 (expected)</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script>
+        // 加载左侧内容
+        fetch('https://raw.githubusercontent.com/Hihi142/Hihi142.github.io/refs/heads/main/sidebar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('sidebar').innerHTML = data;
+            });
+    </script>
+</body>
+</html>
