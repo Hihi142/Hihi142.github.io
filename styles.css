@@ -153,7 +153,7 @@ nav ul li a.active, nav ul li a:hover {
 /* 增加教育和经历标题的字号 */
 .right-column h4, .section-content .right-column h4 {
     color: #000F82; /* 黑色 */
-    margin-top: 0; /* 如果需要，调整上边距 */
+    margin-top: 5px; /* 如果需要，调整上边距 */
     margin-bottom: 10px; /* 提供一定的下边距 */
     font-size: 24px; /* 字体大小，可根据需要调整 */
 }
@@ -225,6 +225,7 @@ nav ul li a.active, nav ul li a:hover {
     display: flex;
     justify-content: space-between; /* 在主轴上均匀分配空白 */
     align-items: flex-start; /* 垂直对齐顶部 */
+    margin-bottom: 10px; /* 根据需要调整行距 */
 }
 
 .research-info {
