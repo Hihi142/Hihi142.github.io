@@ -1,0 +1,203 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    padding-top: 0px; /* Adjust this to the height of your fixed header */
+}
+
+header {
+    background: #fff;
+    color: #000F82;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    border-bottom: 3px solid #0007CD;
+    line-height: 50px;
+    height: 50px; /* Set the header height */
+}
+
+header .logo {
+    color: #000F82;
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 20px;
+    float: left;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0 20px;
+    margin: 0;
+    text-align: center;
+    float: right;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #000F82;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a.active, nav ul li a:hover {
+    background-color: #000F82;
+    color: #fff;
+}
+
+.content {
+    display: none; /* Default: none */
+    padding: 20px;
+    margin-top: 20px; /* Space for fixed header */
+    min-height: calc(100vh - 200px); /* Viewport height minus header and own padding/margin */
+}
+
+.content.active {
+    display: flex;
+    align-items: flex-start; /* 从顶部开始对齐 */
+    justify-content: center; /* 仍然水平居中内容 */
+    padding: 20px;
+    margin-top: 20px;
+    min-height: calc(100vh - 70px); /* 根据头部高度调整 */
+}
+
+.section-content {
+    display: flex;
+    align-items: flex-start; /* 从顶部开始对齐 */
+    justify-content: center; /* 水平居中内容 */
+}
+
+.left-column {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center children horizontally */
+    margin-right: 20px; /* Space between columns */
+    margin-top: 80px; /* 添加上边距，与右栏对齐 */
+}
+
+.left-column img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.left-column .name {
+    font-size: 22px; /* Adjust as needed */
+    color: black;
+    margin-top: 10px; /* Space between image and name */
+}
+
+.social-links {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.social-links a {
+    color: #000F82; /* Adjust the color to match your design */
+    margin: 0 5px;
+    font-size: 24px; /* Adjust the size as needed */
+}
+
+.social-links a:hover {
+    color: #001eff; /* Lighter blue for hover effect */
+}
+
+.right-column {
+    max-width: 800px;
+    flex-grow: 1;
+    margin-top: 60px; /* 确保右栏从相同高度开始 */
+}
+
+/* 链接样式 */
+.right-column a {
+    color: #0000cc; /* 深蓝色 */
+    text-decoration: none; /* 默认无下划线 */
+    transition: color 0.3s, text-decoration 0.3s; /* 平滑过渡效果 */
+}
+
+.right-column a:hover {
+    color: #3399ff; /* 鼠标悬停时变为浅蓝色 */
+    text-decoration: underline; /* 鼠标悬停时出现下划线 */
+}
+
+.section-content .right-column h3 {
+    color: #000F82; /* 黑色 */
+    margin-top: 0; /* 如果需要，调整上边距 */
+    margin-bottom: 10px; /* 提供一定的下边距 */
+    font-size: 24px; /* 字体大小，可根据需要调整 */
+}
+
+.section-content .right-column .description {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-content .right-column .education, 
+.section-content .right-column .experience {
+    flex: 1; /* 让两栏平分空间 */
+    margin-right: 10px; /* 为左栏添加右边距，可以根据需要调整 */
+    padding: 10px;
+}
+
+.section-content .right-column .experience {
+    margin-right: 0; /* 最右侧的栏不需要右边距 */
+}
+
+/* 增加教育和经历标题的字号 */
+.right-column h4, .section-content .right-column h4 {
+    color: #000F82; /* 黑色 */
+    margin-top: 0; /* 如果需要，调整上边距 */
+    margin-bottom: 10px; /* 提供一定的下边距 */
+    font-size: 24px; /* 字体大小，可根据需要调整 */
+}
+
+/* 调整内容的样式，包括标题和详情 */
+.section-content .right-column .education li, 
+.section-content .right-column .experience li {
+    font-size: 16px; /* 内容字号调整为16px */
+    margin-bottom: 10px; /* 每项内容之间的间距 */
+    display: flex; /* 将列表项调整为 flex 布局 */
+    justify-content: space-between; /* 使项目名称和描述在一行 */
+    align-items: center;
+}
+
+.section-content .right-column .education li span, 
+.section-content .right-column .experience li span {
+    display: inline-block; /* 使项目名称和描述在一行 */
+    font-size: 14px; /* 机构和时间的字号稍小 */
+    color: #9a9a9a; /* 较淡的颜色，区分信息层次 */
+    margin-left: 10px; /* 为间距增加一些外边距 */
+    margin-right: 20px; /* 在名称和时间之间提供一些空间 */
+    flex-grow: 1;
+    text-align: right; /* 右对齐 */
+}
+
+.right-column ul {
+    padding-left: 0; /* 移除列表的默认填充 */
+}
+
+.right-column li {
+    display: flex;
+    justify-content: space-between; /* 使项目名称和描述在一行 */
+    margin-bottom: 10px; /* 为列表项增加底部外边距 */
+}
+
+.right-column li strong {
+    flex-grow: 1; /* 允许条目名称占据多余空间 */
+    font-size: 16px;
+    margin-right: 20px; /* 在名称和时间之间提供一些空间 */
+}
+
+.right-column li span {
+    white-space: nowrap; /* 防止时间换行 */
+    text-align: right;
+    font-size: 14px;
+    color: #9a9a9a;
+}
