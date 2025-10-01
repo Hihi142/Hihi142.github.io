@@ -12,14 +12,14 @@ header {
     top: 0;
     width: 100%;
     z-index: 1000;
-    border-bottom: 3px solid #0007CD;
+    border-bottom: 3px solid #a1a1a1;
     line-height: 50px;
     height: 50px; /* Set the header height */
 }
 
 header .logo {
     color: #000F82;
-    font-size: 24px;
+    font-size: 36px;
     font-weight: bold;
     margin-left: 20px;
     float: left;
@@ -41,10 +41,10 @@ nav ul li {
 nav ul li a {
     color: #000F82;
     text-decoration: none;
-    font-size: 16px;
-    padding: 10px;
-    border-radius: 5px;
-    transition: background-color 0.3s, color 0.3s;
+    font-size: 26px;
+    padding: 8px;
+    border-radius: 7px;
+    transition: background-color 0.4s, color 0.4s;
 }
 
 nav ul li a.active, nav ul li a:hover {
@@ -83,13 +83,13 @@ nav ul li a.active, nav ul li a:hover {
 }
 
 .left-column img {
-    width: 200px;
+    width: 300px;
     height: auto;
     border-radius: 10px;
 }
 
 .left-column .name {
-    font-size: 22px; /* Adjust as needed */
+    font-size: 32px; /* Adjust as needed */
     color: black;
     margin-top: 10px; /* Space between image and name */
 }
@@ -102,7 +102,7 @@ nav ul li a.active, nav ul li a:hover {
 .social-links a {
     color: #000F82; /* Adjust the color to match your design */
     margin: 0 5px;
-    font-size: 24px; /* Adjust the size as needed */
+    font-size: 30px; /* Adjust the size as needed */
 }
 
 .social-links a:hover {
@@ -110,8 +110,9 @@ nav ul li a.active, nav ul li a:hover {
 }
 
 .right-column {
-    max-width: 800px;
+    max-width: 1000px;
     flex-grow: 1;
+    font-size: 22px;
     margin-top: 60px; /* 确保右栏从相同高度开始 */
 }
 
@@ -152,16 +153,15 @@ nav ul li a.active, nav ul li a:hover {
 
 /* 增加教育和经历标题的字号 */
 .right-column h4, .section-content .right-column h4 {
-    color: #000F82; /* 黑色 */
+    color: #000000; /* 黑色 */
     margin-top: 5px; /* 如果需要，调整上边距 */
     margin-bottom: 10px; /* 提供一定的下边距 */
-    font-size: 24px; /* 字体大小，可根据需要调整 */
+    font-size: 32px; /* 字体大小，可根据需要调整 */
 }
 
 /* 调整内容的样式，包括标题和详情 */
 .section-content .right-column .education li, 
 .section-content .right-column .experience li {
-    font-size: 16px; /* 内容字号调整为16px */
     margin-bottom: 10px; /* 每项内容之间的间距 */
     display: flex; /* 将列表项调整为 flex 布局 */
     justify-content: space-between; /* 使项目名称和描述在一行 */
@@ -171,7 +171,6 @@ nav ul li a.active, nav ul li a:hover {
 .section-content .right-column .education li span, 
 .section-content .right-column .experience li span {
     display: inline-block; /* 使项目名称和描述在一行 */
-    font-size: 14px; /* 机构和时间的字号稍小 */
     color: #9a9a9a; /* 较淡的颜色，区分信息层次 */
     margin-left: 10px; /* 为间距增加一些外边距 */
     margin-right: 20px; /* 在名称和时间之间提供一些空间 */
@@ -195,30 +194,35 @@ nav ul li a.active, nav ul li a:hover {
 }
 
 .right-column li strong {
-    font-size: 16px;
     margin-right: 20px; /* 在名称和时间之间提供一些空间 */
 }
 
 .right-column li span {
     white-space: nowrap; /* 防止时间换行 */
-    font-size: 14px;
     color: #9a9a9a;
 }
 
 
 .teaching-item {
     display: flex;
-    justify-content: space-between; /* 在主轴上均匀分配空白 */
-    align-items: flex-start; /* 垂直对齐顶部 */
+    justify-content: space-between; /* 左右两端对齐 */
+    align-items: flex-start;        /* 顶部对齐 */
+    margin-top: 24px;   /* 和上面分一点间距，可调整 */
 }
 
 .teaching-info {
-    text-align: left; /* 左对齐 */
+    text-align: left;  /* 保持左对齐 */
 }
 
 .teaching-date {
-    text-align: right; /* 右对齐 */
+    text-align: right; /* 保持右对齐 */
 }
+
+.teaching-detail {
+    margin-top: 4px;   /* 和上面分一点间距，可调整 */
+    text-align: left;  /* 独占一行，左对齐 */
+}
+
 
 
 .research-item {
